@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ccbfhlnlctgo7"]
+
+[node name="VictoryLabel" type="Label"]
+offset_left = 256.0
+offset_top = -3088.0
+offset_right = 400.0
+offset_bottom = -3041.0
