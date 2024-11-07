@@ -14,7 +14,13 @@ func _on_body_entered(body):
 	queue_free()
 	
 	end_game()
-	
+
+func _ready():
+	victory_message = get_node("/root/World/CanvasLayer/VictoryLabel")
+	victory_message.text = "passei aqui"
+	victory_message.visible = true 
+	print(victory_message.text)
+
 func end_game():
 	#   victory_message = get_parent().get_node("CanvasLayer/VictoryLabel")
 	if victory_message: 

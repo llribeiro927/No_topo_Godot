@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://0n8tfusaiur2"]
+[gd_scene load_steps=24 format=4 uid="uid://0n8tfusaiur2"]
 
 [ext_resource type="PackedScene" uid="uid://bapvy71043313" path="res://Player/player.tscn" id="1_vr7hw"]
 [ext_resource type="TileSet" uid="uid://dgp60fa4r1vdi" path="res://World/world-tileset.tres" id="2_2cmn2"]
@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://dt4vwaoalnscf" path="res://World/Props/tree-house.png" id="14_a2rkq"]
 [ext_resource type="AudioStream" uid="uid://bm30fe0s36ati" path="res://Music/platformer_level03_loop.ogg" id="16_20wtl"]
 [ext_resource type="PackedScene" uid="uid://ccbfhlnlctgo7" path="res://World/victory_label.tscn" id="18_w5dxb"]
+[ext_resource type="Texture2D" uid="uid://bfy6bt02nkhhn" path="res://World/Background/middle.png" id="20_6ut84"]
+[ext_resource type="Texture2D" uid="uid://cjk4qy0ofuxjo" path="res://World/Background/backfull.png" id="20_l1hf8"]
 [ext_resource type="PackedScene" uid="uid://bttsjij0ss8q0" path="res://Enemies/Frog/frog.tscn" id="22_8sn40"]
 [ext_resource type="PackedScene" uid="uid://c6diiunn70psp" path="res://Pickups/Cheery/cherry.tscn" id="24_o7pso"]
 
@@ -173,7 +175,6 @@ horizontal_alignment = 1
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="VictoryLabel" parent="CanvasLayer" instance=ExtResource("18_w5dxb")]
-visible = false
 offset_left = 136.0
 offset_top = -2584.0
 offset_right = 280.0
@@ -181,3 +182,24 @@ offset_bottom = -2535.0
 label_settings = SubResource("LabelSettings_5uwj0")
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 16.0
+offset_top = -3512.0
+offset_right = 400.0
+offset_bottom = 166.0
+texture = ExtResource("20_l1hf8")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer2"]
+offset_left = 16.0
+offset_top = -8.0
+offset_right = 400.0
+offset_bottom = 360.0
+texture = ExtResource("20_6ut84")
+stretch_mode = 1
