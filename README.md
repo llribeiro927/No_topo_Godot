@@ -28,3 +28,6 @@
 [Nathan Almeida Gois](https://github.com/Nathangois) - RA: 722311425
 
 [Manoel Vinicius Silva Souza](https://github.com/Manoel-DJS) - RA: 722315125
+
+[Lucas Lima Ribeiro](https://github.com/llribeiro927) - RA: 12723130989
+
